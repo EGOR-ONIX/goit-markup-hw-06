@@ -81,22 +81,57 @@
         <div class="container">
           <h1 class="visually-hidden">Portfolio WebStudio</h1>
 
-          <!-- Filters list -->
+          <!-- Filters radio buttons list -->
           <ul class="filters-list list">
             <li>
-              <button class="filter-btn btn" type="button">All</button>
+              <label class="filter-label">
+                <input
+                  class="filter-btn visually-hidden"
+                  type="radio"
+                  name="filters_portfolio"
+                />
+                All
+              </label>
             </li>
             <li>
-              <button class="filter-btn btn" type="button">Web Site</button>
+              <label class="filter-label">
+                <input
+                  class="filter-btn visually-hidden"
+                  type="radio"
+                  name="filters_portfolio"
+                />
+                Web Site
+              </label>
             </li>
             <li>
-              <button class="filter-btn btn" type="button">App</button>
+              <label class="filter-label">
+                <input
+                  class="filter-btn visually-hidden"
+                  type="radio"
+                  name="filters_portfolio"
+                />
+                App
+              </label>
             </li>
             <li>
-              <button class="filter-btn btn" type="button">Design</button>
+              <label class="filter-label">
+                <input
+                  class="filter-btn visually-hidden"
+                  type="radio"
+                  name="filters_portfolio"
+                />
+                Design
+              </label>
             </li>
             <li>
-              <button class="filter-btn btn" type="button">Marketing</button>
+              <label class="filter-label">
+                <input
+                  class="filter-btn visually-hidden"
+                  type="radio"
+                  name="filters_portfolio"
+                />
+                Marketing
+              </label>
             </li>
           </ul>
 
@@ -424,21 +459,28 @@
           </ul>
         </div>
 
-        <!-- !======================================= -->
-        <div class="footer-subscription-container">
-          <p class="subscription-desc">Subscribe</p>
+        <div class="footer-subscription-wrapper">
+          <strong class="subscription-subtitle">Subscribe</strong>
 
-          <form class="subscription-form">
-            <input
-              class="subscription-input"
-              type="email"
-              name="user_subscription"
-              placeholder="E-mail"
-            />
+          <form
+            class="subscription-form"
+            name="subscription_form"
+            autocomplete="off"
+          >
+            <label class="subscription-field">
+              <input
+                class="subscription-input"
+                type="email"
+                name="user_subscription"
+                placeholder="&nbsp;"
+              />
+              <span class="subscription-label">E-mail</span>
+            </label>
+
             <button class="subscription-btn btn" type="submit">
               Subscribe
-              <svg class="subscription-btn-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-btn-logo"></use>
+              <svg class="subscription-icon" width="24" height="24">
+                <use href="./images/icons.svg#subscription"></use>
               </svg>
             </button>
           </form>
