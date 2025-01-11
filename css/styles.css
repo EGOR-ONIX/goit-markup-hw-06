@@ -174,9 +174,26 @@ button {
 /* BUTTON */
 
 .btn {
+  min-width: 169px;
+  min-height: 56px;
+  padding: 16px 32px;
+
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  color: var(--primary-light-txt-cl);
+
+  background-color: var(--brand-cl);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+
+  transition: background-color var(--anim-active);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--accent-cl);
 }
 
 /* CARD SET */
@@ -357,25 +374,7 @@ button {
   color: var(--primary-light-txt-cl);
 }
 
-.hero-btn {
-  min-width: 169px;
-  min-height: 56px;
-  padding: 16px 32px;
-
-  color: var(--primary-light-txt-cl);
-
-  background-color: var(--brand-cl);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: none;
-  border-radius: 4px;
-
-  transition: background-color var(--anim-active);
-}
-
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: var(--accent-cl);
-}
+/* ! .hero-btn {} .hero-btn:hover,.hero-btn:focus {} */
 
 /* FEATURES SECTION */
 
@@ -727,19 +726,6 @@ button {
   min-width: 165px;
   min-height: 40px;
   padding: 8px 24px;
-
-  color: var(--primary-light-txt-cl);
-
-  background-color: var(--brand-cl);
-  border: none;
-  border-radius: 4px;
-
-  transition: background-color var(--anim-active);
-}
-
-.subscription-btn:hover,
-.subscription-btn:focus {
-  background-color: var(--accent-cl);
 }
 
 .subscription-btn-icon {
@@ -975,21 +961,4 @@ button {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  padding: 16px 32px;
-  min-width: 169px;
-  min-height: 56px;
-
-  color: var(--primary-light-txt-cl);
-
-  background-color: var(--brand-cl);
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  border: none;
-  border-radius: 4px;
-
-  transition: background-color var(--anim-active);
-}
-
-.form-btn:hover,
-.form-btn:focus {
-  background-color: var(--accent-cl);
 }
